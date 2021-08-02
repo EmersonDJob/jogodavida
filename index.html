@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O jogo da vida - Conway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>O jogo da vida </h1>
+        <p>
+            As regras são simples e elegantes:
+        </p>
+            <ul>
+                <li>Qualquer célula viva com menos de dois vizinhos vivos morre de solidão.</li>
+                <li>Qualquer célula viva com mais de três vizinhos vivos morre de superpopulação.</li>
+                <li>Qualquer célula morta com exatamente três vizinhos vivos se torna uma célula viva.</li>
+                <li>Qualquer célula viva com dois ou três vizinhos vivos continua no mesmo estado para a próxima geração.</li>
+            </ul>
+            <p>
+                É importante entender que todos os nascimentos e mortes ocorrem simultaneamente. Juntos eles constituem uma geração ou, como podemos chamá-los, um "instante" na história da vida completa da configuração inicial.
+            </p>
+
+    </div>
+    <div class="canvas">
+        <canvas></canvas>
+
+        <div class="btns">
+            <button classe="btn" onclick="start()">Start</button>
+            <button classe="btn" onclick="reset()">Reset</button>
+        </div>        
+    </div>
+
+   
+    
+    <script src="index.js"></script>
+</body>
+</html>
